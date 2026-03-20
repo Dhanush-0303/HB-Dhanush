@@ -1,2 +1,2 @@
-# hbdhanush.github.io
+# hbdhanush
 My First Portfolio website project 
