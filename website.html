@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HB Dhanush Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1rem 9%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:3rem;
+    color:#b74b4b;
+    font-weight:800;
+}
+
+nav a{
+    font-size:1.6rem;
+    color:#fff;
+    margin-left:3rem;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#b74b4b;
+    border-bottom:3px solid #b74b4b;
+}
+
+/* ================= HOME ================= */
+
+section{
+    padding:8rem 9% 5rem;
+    min-height:100vh;
+}
+
+.home{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6rem;
+}
+
+.home-img img{
+    width:300px;
+    border-radius:50%;
+}
+
+.home-content h1{
+    font-size:5rem;
+}
+
+.home-content h3{
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+span{
+    color:#b74b4b;
+}
+
+.home-content p{
+    font-size:1.5rem;
+    margin-bottom:2rem;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:40px;
+    height:40px;
+    border:2px solid #b74b4b;
+    border-radius:50%;
+    margin-right:1rem;
+    color:#b74b4b;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#b74b4b;
+    color:#000;
+}
+
+.btn{
+    display:inline-block;
+    padding:1rem 2rem;
+    border:2px solid #b74b4b;
+    border-radius:30px;
+    color:#b74b4b;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b74b4b;
+    color:#000;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-container{
+    text-align:center;
+}
+
+.section-title{
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+
+.subtitle{
+    color:#ccc;
+    margin-bottom:3rem;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+}
+
+.skill-card{
+    background:#111;
+    padding:2rem;
+    border-radius:20px;
+    border:1px solid #333;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    background:#b74b4b;
+    color:#000;
+}
+
+.skill-card i{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+}
+
+/* ================= EDUCATION ================= */
+
+.education-container{
+    text-align:center;
+}
+
+.education-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+    margin-top:3rem;
+}
+
+.education-card{
+    background:#111;
+    padding:2rem;
+    border-radius:20px;
+    border:1px solid #333;
+    transition:.3s;
+    text-align:left;
+}
+
+.education-card:hover{
+    transform:translateY(-10px);
+    background:#b74b4b;
+    color:#000;
+}
+
+.education-card i{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+}
+
+.year{
+    display:inline-block;
+    padding:5px 15px;
+    border:1px solid #b74b4b;
+    border-radius:20px;
+    margin-bottom:1rem;
+    font-size:1.2rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HB Dhanush</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+    </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="main.jpg" alt="Profile Image">
+    </div>
+    <div class="home-content">
+        <h1>Hi, It's <span>HB Dhanush</span></h1>
+        <h3>I'm a Web Developer</h3>
+        <p>Student at GMIT Polytechnic pursuing Computer Science Engineering. Passionate about AI/ML, Web Development and Software Engineering.</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <a href="#" class="btn">Hire Me</a>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills-container" id="skills">
+    <h1 class="section-title">My <span>Skills</span></h1>
+    <p class="subtitle">Bridging Computer Science and Creativity</p>
+
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, Python</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-brain"></i>
+            <h3>AI & ML</h3>
+            <p>Python, Generative AI, Data Analysis</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-video"></i>
+            <h3>Video Editing</h3>
+            <p>AI Video Tools, Social Media</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education-container" id="education">
+    <h1 class="section-title">My <span>Education</span></h1>
+    <p class="subtitle">Building my foundation in Computer Science</p>
+
+    <div class="education-grid">
+        <div class="education-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Diploma in Computer Science</h3>
+            <h4>GMIT Polytechnic</h4>
+            <div class="year">2023 - Present</div>
+            <p>Focusing on AI/ML, Web Development and Software Engineering.</p>
+        </div>
+
+        <div class="education-card">
+            <i class="fas fa-school"></i>
+            <h3>Secondary Education</h3>
+            <h4>High School</h4>
+            <div class="year">2020 - 2023</div>
+            <p>Strong foundation in Science and Mathematics.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
