@@ -65,7 +65,8 @@ nav.scrolled{background:rgba(10,13,15,.7);backdrop-filter:blur(14px);border-bott
 .hero{padding:150px 0 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--emerald);border:1px solid rgba(52,211,153,.3);background:rgba(52,211,153,.06);padding:6px 12px;border-radius:99px}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
-.hero h1{font-size:clamp(46px,8vw,92px);line-height:.98;margin:22px 0;font-weight:700}
+.hero h1{font-size:clamp(46px,8vw,92px);line-height:1.08;margin:18px 0;font-weight:700}
+.hero h1 .pretitle{font-size:.34em;font-weight:600;color:var(--muted);letter-spacing:.08em;display:inline-block;margin-bottom:6px}
 .hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .type-role{font-family:var(--mono);font-size:clamp(16px,2vw,20px);color:var(--cyan);margin-bottom:20px;min-height:1.4em}
 .type-role .cursor{background:var(--cyan)}
@@ -188,7 +189,7 @@ footer{border-top:1px solid var(--border);padding:36px 0;font-size:13.5px}
   <div>
     <span class="badge"><span class="dot"></span>AVAILABLE FOR INTERNSHIPS</span>
     <span class="key-hint" id="devHint" style="display:inline-block;margin-left:10px;padding:5px 12px;border-radius:8px;background:var(--panel);border:1px solid var(--border)">psst — check the console</span>
-    <h1>H B<br><em>Dhanush</em></h1>
+    <h1><span class="pretitle">H B</span><br><em>Dhanush</em></h1>
     <p class="type-role" id="typeRole"></p>
     <p class="desc">Diploma Computer Science Engineering student building secure, scalable digital experiences while developing expertise in cybersecurity, application security and software engineering.</p>
     <div class="hero-cta">
